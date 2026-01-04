@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alisha's Mehandi | Henna Artist</title>
+  <!-- Tailwind CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            primary: '#FA5C5C',
+            secondary: '#FD8A6B',
+            accent: '#FEC288',
+            dark: '#1a1a1a',
+            soft: '#fff7f3'
+          },
+          fontFamily: {
+            display: ['Playfair Display', 'serif'],
+            body: ['Inter', 'system-ui', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Playfair+Display:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.7s ease, transform 0.7s ease;
+    }
+    .fade-up.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body class="bg-soft text-dark font-body">
+
+  <!-- Navbar -->
+  <header class="fixed top-0 left-0 w-full z-30 bg-soft/80 backdrop-blur border-b border-accent/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex items-center justify-between h-16">
+      <a href="#hero" class="flex items-center gap-2">
+        <div class="w-9 h-9 rounded-full bg-primary flex items-center justify-center text-white font-display text-xl">
+          GA
+        </div>
+        <div>
+          <p class="font-display text-lg leading-tight">GA Mehandi</p>
+          <p class="text-xs text-primary/90 -mt-1">Fine Bridal Henna</p>
+        </div>
+      </a>
+      <nav class="hidden md:flex items-center gap-8 text-sm font-medium">
+        <a href="#about" class="hover:text-primary transition-colors">About</a>
+        <a href="#services" class="hover:text-primary transition-colors">Services</a>
+        <a href="portfolio.html" class="hover:text-primary transition-colors">Portfolio</a>
+        <a href="#pricing" class="hover:text-primary transition-colors">Pricing</a>
+        <a href="#henna" class="hover:text-primary transition-colors">Henna cones</a>
+        <a href="#contact" class="hover:text-primary transition-colors">Contact</a>
+      </nav>
+      <a href="#contact" class="hidden md:inline-flex items-center gap-2 bg-primary text-white text-xs sm:text-sm font-semibold px-4 py-2 rounded-full shadow-sm shadow-primary/40 hover:bg-secondary transition">
+        Book on WhatsApp
+      </a>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="pt-24 sm:pt-28 pb-16 sm:pb-20 bg-gradient-to-br from-soft via-white to-accent/20">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-center">
+      <!-- Left -->
+      <div class="fade-up">
+        <p class="uppercase tracking-[0.2em] text-xs text-primary mb-3">Bridal & party mehandi</p>
+        <h1 class="font-display text-3xl sm:text-4xl md:text-5xl leading-tight mb-4">
+          Beautiful Mehandi for your
+          <span class="text-primary">special</span> day
+        </h1>
+        <p class="text-sm sm:text-base text-gray-700 mb-6">
+          Alisha's Mehandi creates neat and rich **designs** that look good in photos, stay dark for days and feel light on your hands.
+        </p>
+        <div class="flex flex-wrap gap-3 mb-6">
+          <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-primary text-white text-sm font-semibold shadow-md shadow-primary/40 hover:bg-secondary transition">
+            Book your slot
+          </a>
+          <a href="portfolio.html" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full border border-primary/40 text-primary text-sm font-semibold hover:bg-primary/5 transition">
+            View designs
+          </a>
+        </div>
+        <div class="flex flex-wrap gap-5 text-xs sm:text-sm text-gray-700">
+          <div class="flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-accent/60 flex items-center justify-center text-[11px]">✓</span>
+            <span>Own handmade natural henna cones</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-6 h-6 rounded-full bg-accent/60 flex items-center justify-center text-[11px]">★</span>
+            <span>Bridal, sangeet and festival bookings</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right: hero image grid (all mehendi) -->
+      <div class="fade-up md:justify-self-end">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="space-y-4">
+            <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60 transform hover:-translate-y-1 hover:shadow-xl transition">
+              <img src="/images/mehandhi_12.jpeg"
+                   alt="Bridal mehendi on both hands"
+                   class="w-full h-58 sm:h-66 object-cover">
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60 transform hover:-translate-y-1 hover:shadow-xl transition">
+              <img src="/images/mehandhi_11.jpeg"
+                   alt="Arabic style mehendi on hands"
+                   class="w-full h-50 sm:h-58 object-cover">
+            </div>
+          </div>
+          <div class="space-y-4 mt-6">
+            <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60 transform hover:-translate-y-1 hover:shadow-xl transition">
+              <img src="/images/mehandhi_10.jpeg"
+                   alt="Full bridal mehendi design"
+                   class="w-full h-50 sm:h-58 object-cover">
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60 bg-white flex flex-col justify-center items-center py-6 px-4 text-center">
+              <p class="text-xs text-primary font-semibold tracking-[0.18em] uppercase mb-2">Now booking</p>
+              <p class="text-sm sm:text-base font-semibold mb-1">Across Ambur</p>
+              <p class="text-xs text-gray-600">Share your date on WhatsApp.I will confirm timing and guide you with simple care tips.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-14 sm:py-18 bg-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div class="fade-up">
+        <p class="text-xs tracking-[0.2em] uppercase text-primary mb-3">About US</p>
+        <h2 class="font-display text-2xl sm:text-3xl mb-4">Clean, neat and patient work</h2>
+        <p class="text-sm sm:text-base text-gray-700 mb-4">
+          Gulnaz Banu is a friendly mehandhi artist who loves drawing fine mehendi lines and balanced patterns that look simple yet detailed.
+        </p>
+        <p class="text-sm sm:text-base text-gray-700">
+          She listens to what you like, checks your dress colours and suggests designs that fit your style, whether you want very heavy work or light and minimal.
+        </p>
+        <div class="mt-6 grid grid-cols-2 gap-4 text-xs sm:text-sm">
+          <div class="rounded-2xl border border-accent/60 bg-soft px-4 py-3">
+            <p class="font-semibold mb-1">Neat finishing</p>
+            <p class="text-gray-700">Sharp cones and steady hands so the designs look clear even in close photos.</p>
+          </div>
+          <div class="rounded-2xl border border-accent/60 bg-soft px-4 py-3">
+            <p class="font-semibold mb-1">Comfortable sitting</p>
+            <p class="text-gray-700">Easy, relaxed talks and breaks when needed so you do not feel tired during long bridal sessions.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="fade-up md:justify-self-end">
+        <div class="relative">
+          <div class="absolute -inset-4 rounded-3xl bg-accent/40 blur-xl opacity-40"></div>
+          <div class="relative rounded-3xl overflow-hidden shadow-xl">
+            <img src="/images/mehandhi_4.png"
+                 alt="Mehendi artist drawing henna on hand"
+                 class="w-185 h-72 ">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-14 sm:py-18 bg-soft">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6">
+      <div class="fade-up text-center mb-10">
+        <p class="text-xs tracking-[0.2em] uppercase text-primary mb-3">Mehandi styles</p>
+        <h2 class="font-display text-2xl sm:text-3xl mb-3">Different designs for different tastes</h2>
+        <p class="max-w-2xl mx-auto text-sm sm:text-base text-gray-700">
+          You can choose a simple **look** or a heavy pattern. Alisha mixes styles so your hands match your outfit and the event.
+        </p>
+      </div>
+
+      <div class="fade-up grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Traditional -->
+        <div class="group rounded-3xl bg-white border border-accent/60 p-5 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <div class="rounded-2xl overflow-hidden mb-4">
+            <img src="https://tse4.mm.bing.net/th/id/OIP.Tw_mXt13rZNhgWEEnNNqrwHaNK?rs=1&pid=ImgDetMain&o=7&rm=3"
+                 alt="Traditional mehendi design on hands"
+                 class="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <h3 class="font-semibold mb-1">Traditional Mehandi</h3>
+          <p class="text-xs sm:text-sm text-gray-700 mb-3">
+            Classic Indian patterns with paisleys, flowers and peacocks that give a full and rich feel.
+          </p>
+          <p class="text-xs font-semibold text-primary mt-auto">Good for: Weddings, festivals, family functions</p>
+        </div>
+
+        <!-- Arabian -->
+        <div class="group rounded-3xl bg-white border border-accent/60 p-5 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <div class="rounded-2xl overflow-hidden mb-4">
+            <img src="/images/mehandhi_9.jpeg"
+                 alt="Arabic mehendi flowing trail"
+                 class="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <h3 class="font-semibold mb-1">Arabian Mehandi</h3>
+          <p class="text-xs sm:text-sm text-gray-700 mb-3">
+            Bold floral trails with empty spaces that look very clear and modern on the hands.
+          </p>
+          <p class="text-xs font-semibold text-primary mt-auto">Good for: Engagements, parties</p>
+        </div>
+
+        <!-- Contemporary -->
+        <div class="group rounded-3xl bg-white border border-accent/60 p-5 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <div class="rounded-2xl overflow-hidden mb-4">
+            <img src="https://i.pinimg.com/736x/2d/91/7c/2d917c736242ab5d2cd563bd47c7e45d.jpg"
+                 alt="Contemporary mehendi style"
+                 class="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <h3 class="font-semibold mb-1">Contemporary Mehandi</h3>
+          <p class="text-xs sm:text-sm text-gray-700 mb-3">
+            Simple grids, shapes and cute elements that give a light and stylish look.
+          </p>
+          <p class="text-xs font-semibold text-primary mt-auto">Good for: Photoshoots, casual functions</p>
+        </div>
+
+        <!-- Bridal -->
+        <div class="group rounded-3xl bg-white border border-accent/60 p-5 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <div class="rounded-2xl overflow-hidden mb-4">
+            <img src="/images/mehandhi_1.jpeg"
+                 alt="Heavy bridal mehendi"
+                 class="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <h3 class="font-semibold mb-1">Bridal Mehandi</h3>
+          <p class="text-xs sm:text-sm text-gray-700 mb-3">
+            Heavy full hand work with small stories, initials and special elements from your life.
+          </p>
+          <p class="text-xs font-semibold text-primary mt-auto">Good for: Brides and very close family</p>
+        </div>
+
+        <!-- Floral -->
+        <div class="group rounded-3xl bg-white border border-accent/60 p-5 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <div class="rounded-2xl overflow-hidden mb-4">
+            <img src="/images/mehandi_2.jpeg"
+                 alt="Floral mehendi with mandala"
+                 class="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <h3 class="font-semibold mb-1">Floral & Mandala</h3>
+          <p class="text-xs sm:text-sm text-gray-700 mb-3">
+            Round mandalas and soft flowers that look very neat and are easy to maintain.
+          </p>
+          <p class="text-xs font-semibold text-primary mt-auto">Good for: Haldi, mehendi night</p>
+        </div>
+
+        <!-- Western -->
+        <div class="group rounded-3xl bg-white border border-accent/60 p-5 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <div class="rounded-2xl overflow-hidden mb-4">
+            <img src="/images/mehandhi_13.jpeg"
+                 alt="Bracelet style mehendi"
+                 class="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-500">
+          </div>
+          <h3 class="font-semibold mb-1">Western Style</h3>
+          <p class="text-xs sm:text-sm text-gray-700 mb-3">
+            Bracelet style, finger rings and tattoo like designs for a small but smart touch.
+          </p>
+          <p class="text-xs font-semibold text-primary mt-auto">Good for: Parties and everyday wear</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="py-14 sm:py-18 bg-white">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6">
+      <div class="fade-up text-center mb-10">
+        <p class="text-xs tracking-[0.2em] uppercase text-primary mb-3">Simple rates</p>
+        <h2 class="font-display text-2xl sm:text-3xl mb-3">Price changes with length</h2>
+        <p class="max-w-2xl mx-auto text-sm sm:text-base text-gray-700">
+          You pay based on how far the **design** goes on your hand, so it is clear and easy for everyone.
+        </p>
+      </div>
+
+      <div class="fade-up grid md:grid-cols-3 gap-6">
+        <!-- Palm -->
+        <div class="relative rounded-3xl border border-accent/60 bg-soft p-6 flex flex-col text-center shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <p class="text-xs uppercase tracking-[0.22em] text-primary mb-2">Only palm</p>
+          <p class="text-3xl font-display mb-1">₹350</p>
+          <p class="text-xs text-gray-600 mb-4">Per hand, front side</p>
+          <ul class="text-xs sm:text-sm text-gray-700 space-y-2 mb-5">
+            <li>Nice round mandala or simple central design.</li>
+            <li>Good when you want light mehendi.</li>
+            <li>Fast to apply and easy for elders and kids.</li>
+          </ul>
+          <a href="#contact" class="mt-auto inline-flex justify-center px-4 py-2 rounded-full bg-primary text-white text-xs font-semibold hover:bg-secondary transition">
+            Book palm only
+          </a>
+        </div>
+
+        <!-- Palm to Wrist -->
+        <div class="relative rounded-3xl border-2 border-primary bg-white p-6 flex flex-col text-center shadow-lg shadow-accent/60 hover:-translate-y-1.5 transition">
+          <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] px-3 py-1 rounded-full uppercase tracking-[0.18em]">
+            Most booked
+          </span>
+          <p class="text-xs uppercase tracking-[0.22em] text-primary mb-2 mt-1">Palm to wrist</p>
+          <p class="text-3xl font-display mb-1">₹500</p>
+          <p class="text-xs text-gray-600 mb-4">Per hand, front side</p>
+          <ul class="text-xs sm:text-sm text-gray-700 space-y-2 mb-5">
+            <li>Full palm covered with a neat wrist band.</li>
+            <li>Good balance of time and detail.</li>
+            <li>Perfect for sisters and friends of the bride.</li>
+          </ul>
+          <a href="#contact" class="mt-auto inline-flex justify-center px-4 py-2 rounded-full bg-primary text-white text-xs font-semibold hover:bg-secondary transition">
+            Book till wrist
+          </a>
+        </div>
+
+        <!-- Forearm -->
+        <div class="relative rounded-3xl border border-accent/60 bg-soft p-6 flex flex-col text-center shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
+          <p class="text-xs uppercase tracking-[0.22em] text-primary mb-2">Up to forearm</p>
+          <p class="text-3xl font-display mb-1">₹650</p>
+          <p class="text-xs text-gray-600 mb-4">Per hand, front side</p>
+          <ul class="text-xs sm:text-sm text-gray-700 space-y-2 mb-5">
+            <li>Long bridal style pattern till the forearm.</li>
+            <li>More time and more fine details.</li>
+            <li>Nice choice for brides and very close family.</li>
+          </ul>
+          <a href="#contact" class="mt-auto inline-flex justify-center px-4 py-2 rounded-full bg-primary text-white text-xs font-semibold hover:bg-secondary transition">
+            Book forearm length
+          </a>
+        </div>
+      </div>
+
+      <p class="fade-up text-[11px] sm:text-xs text-gray-500 text-center mt-5">
+        Final amount may change a little based on back side designs and extra custom work.
+      </p>
+    </div>
+  </section>
+
+  <!-- Handmade henna cones -->
+  <section id="henna" class="py-14 sm:py-18 bg-soft">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-center">
+      <div class="fade-up">
+        <p class="text-xs tracking-[0.2em] uppercase text-primary mb-3">Handmade henna cones</p>
+        <h2 class="font-display text-2xl sm:text-3xl mb-3">Fresh cones made at home</h2>
+        <p class="text-sm sm:text-base text-gray-700 mb-3">
+          Alisha makes her own **henna** paste using good quality powder, essential oils and safe ingredients so the colour comes out deep and strong.
+        </p>
+        <p class="text-sm sm:text-base text-gray-700 mb-4">
+          These cones are also sold separately, so if you like doing mehendi on your own or for friends, you can order fresh cones and get them delivered within Tamil Nadu.
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 mb-4">
+          <li>• No pre‑mixed market cones</li>
+          <li>• Packed on order for better stain</li>
+          <li>• Best used within a few days of making</li>
+        </ul>
+        <a href="https://wa.me/919943693987?text=Hi%20Alisha,%20I%20want%20to%20buy%20your%20handmade%20henna%20cones."
+           target="_blank"
+           class="inline-flex items-center gap-2 bg-primary text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md shadow-primary/40 hover:bg-secondary transition">
+          Ask price on WhatsApp
+        </a>
+        <p class="mt-2 text-[11px] text-gray-500">Delivery and pickup available only inside Tamil Nadu.</p>
+      </div>
+
+      <div class="fade-up md:justify-self-end">
+        <div class="grid grid-cols-2 gap-4">
+          <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60">
+            <img src="/images/Heena_2.png"
+                 alt="Henna cones arranged on a surface"
+                 class="w-full h-60 sm:h-60 object-cover">
+          </div>
+          <div class="space-y-4">
+            <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60">
+              <img src="/images/Heena-1.png"
+                   alt="Henna pattern made using cone"
+                   class="w-full h-20 sm:h-28 object-cover">
+            </div>
+            <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60">
+              <img src="https://th.bing.com/th/id/OIP.WWd0WcrPLew4JReRDaFy1gHaE8?w=250&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
+                   alt="Close up view of henna paste"
+                   class="w-full h-20 sm:h-28 object-cover">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-14 sm:py-18 bg-gradient-to-br from-soft via-white to-accent/30">
+    <div class="max-w-5xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-start">
+      <!-- Info -->
+      <div class="fade-up">
+        <p class="text-xs tracking-[0.2em] uppercase text-primary mb-3">Contact & bookings</p>
+        <h2 class="font-display text-2xl sm:text-3xl mb-3">Share your date and city</h2>
+        <p class="text-sm sm:text-base text-gray-700 mb-4">
+          Fill this small **form** and a WhatsApp chat will open with all your details, so you can talk directly with Alisha.
+        </p>
+        <ul class="text-sm text-gray-700 space-y-2 mb-5">
+          <li>• Service available within Tamil Nadu only</li>
+          <li>• Fast replies between 10 AM and 8 PM</li>
+          <li>• You can also send reference photos of designs</li>
+        </ul>
+        <div class="rounded-2xl border border-accent/60 bg-white px-4 py-3 text-sm">
+          <p class="font-semibold mb-1">Direct WhatsApp</p>
+          <a href="https://wa.me/99436 03907" target="_blank" class="inline-flex items-center gap-2 text-primary hover:text-secondary">
+            <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-primary text-white text-xs">wa</span>
+            <span>+91 99436 93987</span>
+          </a>
+        </div>
+      </div>
+
+      <!-- Form -->
+      <div class="fade-up">
+        <form id="whatsappForm" class="bg-white rounded-3xl shadow-lg shadow-accent/40 p-5 sm:p-6 space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold mb-1">Full name</label>
+              <input type="text" id="name" required
+                     class="w-full border border-accent/60 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/70">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold mb-1">Event date</label>
+              <input type="date" id="date" required
+                     class="w-full border border-accent/60 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/70">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-semibold mb-1">Area in Ambur</label>
+              <input type="text" id="location" required
+                     class="w-full border border-accent/60 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/70">
+            </div>
+            <div>
+              <label class="block text-xs font-semibold mb-1">Type of event</label>
+              <input type="text" id="event" placeholder="Wedding, engagement, festival..."
+                     class="w-full border border-accent/60 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/70">
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold mb-1">Preferred style</label>
+            <select id="style"
+                    class="w-full border border-accent/60 rounded-xl px-3 py-2 text-sm bg-white focus:outline-none focus:ring-2 focus:ring-primary/70">
+              <option>Traditional</option>
+              <option>Arabian</option>
+              <option>Contemporary</option>
+              <option>Bridal</option>
+              <option>Floral</option>
+              <option>Western</option>
+              <option>Not sure, please suggest</option>
+            </select>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold mb-1">Coverage</label>
+            <div class="grid grid-cols-3 gap-2 text-xs">
+              <label class="flex items-center gap-2 border border-accent/60 rounded-xl px-2 py-2 cursor-pointer">
+                <input type="radio" name="coverage" value="Palm (₹350 per hand)" class="accent-primary" checked>
+                <span>Palm</span>
+              </label>
+              <label class="flex items-center gap-2 border border-accent/60 rounded-xl px-2 py-2 cursor-pointer">
+                <input type="radio" name="coverage" value="Palm to Wrist (₹500 per hand)" class="accent-primary">
+                <span>Palm–wrist</span>
+              </label>
+              <label class="flex items-center gap-2 border border-accent/60 rounded-xl px-2 py-2 cursor-pointer">
+                <input type="radio" name="coverage" value="Up to Forearm (₹650 per hand)" class="accent-primary">
+                <span>Forearm</span>
+              </label>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-semibold mb-1">Any notes for Alisha</label>
+            <textarea id="message" rows="3"
+                      class="w-full border border-accent/60 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/70"
+                      placeholder="Share timing, how many people and any design ideas you have."></textarea>
+          </div>
+
+          <button type="submit"
+                  class="w-full inline-flex justify-center items-center gap-2 bg-primary text-white text-sm font-semibold px-4 py-2.5 rounded-full hover:bg-secondary transition shadow-md shadow-primary/40">
+            Send details on WhatsApp
+          </button>
+
+          <p class="text-[11px] text-gray-500 text-center">
+            After you click send, WhatsApp will open with all these details. You can then chat and confirm.
+          </p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="border-t border-accent/40 bg-white py-5">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
+      <p>© <span id="year"></span> Alisha's Mehandi. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="#hero" class="hover:text-primary">Home</a>
+        <a href="#about" class="hover:text-primary">About</a>
+        <a href="#services" class="hover:text-primary">Services</a>
+        <a href="portfolio.html" class="hover:text-primary">Portfolio</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script>
+    // Current year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // IntersectionObserver for fade-up animation
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('show');
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.15 });
+
+    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+
+    // WhatsApp form submit (no number of hands now)
+    const form = document.getElementById('whatsappForm');
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const date = document.getElementById('date').value;
+      const location = document.getElementById('location').value.trim();
+      const eventType = document.getElementById('event').value.trim();
+      const style = document.getElementById('style').value;
+      const coverage = document.querySelector('input[name="coverage"]:checked').value;
+      const message = document.getElementById('message').value.trim();
+
+      let text = `Hi Alisha, I want to book Mehandi.%0A%0A`;
+      text += `Name: ${name}%0A`;
+      text += `Event date: ${date}%0A`;
+      text += `City / area (Tamil Nadu): ${location}%0A`;
+      if (eventType) text += `Event type: ${eventType}%0A`;
+      text += `Preferred style: ${style}%0A`;
+      text += `Coverage: ${coverage}%0A`;
+      if (message) text += `%0ANotes:%0A${encodeURIComponent(message)}`;
+
+      const phone = '9943603907';
+      const url = `https://wa.me/${phone}?text=${text}`;
+      window.open(url, '_blank');
+    });
+  </script>
+</body>
+</html>
