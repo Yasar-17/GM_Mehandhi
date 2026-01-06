@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>GM_Mehandhi | Henna Artist</title>
+  <title>Alisha's Mehandi | Henna Artist</title>
   <!-- Tailwind CDN -->
   <script src="https://cdn.tailwindcss.com"></script>
   <script>
@@ -32,18 +32,30 @@
     html {
       scroll-behavior: smooth;
     }
+
     .fade-up {
       opacity: 0;
       transform: translateY(20px);
       transition: opacity 0.7s ease, transform 0.7s ease;
     }
+
     .fade-up.show {
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* On mobile, disable the fade-up effect so content is visible immediately */
+    @media (max-width: 767px) {
+      .fade-up {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        transition: none !important;
+      }
+    }
   </style>
 </head>
 <body class="bg-soft text-dark font-body">
+
 
   <!-- Navbar -->
   <header class="fixed top-0 left-0 w-full z-30 bg-soft/80 backdrop-blur border-b border-accent/40">
@@ -71,6 +83,7 @@
     </div>
   </header>
 
+
   <!-- Hero -->
   <section id="hero" class="pt-24 sm:pt-28 pb-16 sm:pb-20 bg-gradient-to-br from-soft via-white to-accent/20">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 grid md:grid-cols-2 gap-10 items-center">
@@ -82,7 +95,7 @@
           <span class="text-primary">special</span> day
         </h1>
         <p class="text-sm sm:text-base text-gray-700 mb-6">
-         GA Mehandi creates neat and rich designs that look good in photos, stay dark for days and feel light on your hands.
+          Alisha's Mehandi creates neat and rich designs that look good in photos, stay dark for days and feel light on your hands.
         </p>
         <div class="flex flex-wrap gap-3 mb-6">
           <a href="#contact" class="inline-flex items-center justify-center px-5 py-2.5 rounded-full bg-primary text-white text-sm font-semibold shadow-md shadow-primary/40 hover:bg-secondary transition">
@@ -104,24 +117,25 @@
         </div>
       </div>
 
+
       <!-- Right: hero image grid (all mehendi) -->
       <div class="fade-up md:justify-self-end">
         <div class="grid grid-cols-2 gap-4">
           <div class="space-y-4">
             <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60 transform hover:-translate-y-1 hover:shadow-xl transition">
-              <img src="https://i.pinimg.com/736x/7c/b7/65/7cb7650403646e014307597a6b06f78d.jpg"
+              <img src="/images/mehandhi_12.jpeg"
                    alt="Bridal mehendi on both hands"
                    class="w-full h-58 sm:h-66 object-cover">
             </div>
             <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60 transform hover:-translate-y-1 hover:shadow-xl transition">
-              <img src="https://i.pinimg.com/736x/fb/77/29/fb772952d1340aee493077675e91cd6c.jpg"
+              <img src="/images/mehandhi_11.jpeg"
                    alt="Arabic style mehendi on hands"
                    class="w-full h-50 sm:h-58 object-cover">
             </div>
           </div>
           <div class="space-y-4 mt-6">
             <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60 transform hover:-translate-y-1 hover:shadow-xl transition">
-              <img src="https://i.pinimg.com/736x/1f/c8/64/1fc864a3fae9e1988422b69e08b334c6.jpg"
+              <img src="/images/mehandhi_10.jpeg"
                    alt="Full bridal mehendi design"
                    class="w-full h-50 sm:h-58 object-cover">
             </div>
@@ -135,6 +149,7 @@
       </div>
     </div>
   </section>
+
 
   <!-- About -->
   <section id="about" class="py-14 sm:py-18 bg-white">
@@ -160,21 +175,23 @@
         </div>
       </div>
 
+
       <div class="fade-up md:justify-self-end w-full">
         <div class="relative w-full max-w-sm sm:max-w-md md:max-w-[85%] lg:max-w-[75%] md:pr-8 md:pt-6 md:pb-6 mx-auto md:mx-0">
-           <div class="absolute -inset-4 rounded-3xl bg-accent/40 blur-xl opacity-40"></div>
-             <!-- Image container -->
-               <div class="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/5]">
-      <img
-        src="https://i.pinimg.com/736x/7b/a7/5e/7ba75e824885e091698d9aaf33d4b39b.jpg"
-        alt="Mehendi artist drawing henna on hand"
-        class="w-85 h-85 object-cover"
-      />
-    </div>
-  </div>
-</div>
+          <div class="absolute -inset-4 rounded-3xl bg-accent/40 blur-xl opacity-40"></div>
+          <!-- Image container -->
+          <div class="relative rounded-3xl overflow-hidden shadow-xl aspect-[4/5]">
+            <img
+              src="images/mehandhi_7.jpeg"
+              alt="Mehendi artist drawing henna on hand"
+              class="w-85 h-85 object-cover"
+            />
+          </div>
+        </div>
+      </div>
     </div>
   </section>
+
 
   <!-- Services -->
   <section id="services" class="py-14 sm:py-18 bg-soft">
@@ -183,9 +200,10 @@
         <p class="text-xs tracking-[0.2em] uppercase text-primary mb-3">Mehandi styles</p>
         <h2 class="font-display text-2xl sm:text-3xl mb-3">Different designs for different tastes</h2>
         <p class="max-w-2xl mx-auto text-sm sm:text-base text-gray-700">
-          You can choose a simple **look** or a heavy pattern. Alisha mixes styles so your hands match your outfit and the event.
+          You can choose a simple look or a heavy pattern. Alisha mixes styles so your hands match your outfit and the event.
         </p>
       </div>
+
 
       <div class="fade-up grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
         <!-- Traditional -->
@@ -202,10 +220,11 @@
           <p class="text-xs font-semibold text-primary mt-auto">Good for: Weddings, festivals, family functions</p>
         </div>
 
+
         <!-- Arabian -->
         <div class="group rounded-3xl bg-white border border-accent/60 p-5 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
           <div class="rounded-2xl overflow-hidden mb-4">
-            <img src="https://i.pinimg.com/736x/e8/0c/2d/e80c2d65a139538ed051fe6d2aace12a.jpg"
+            <img src="/images/mehandhi_9.jpeg"
                  alt="Arabic mehendi flowing trail"
                  class="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
@@ -215,6 +234,7 @@
           </p>
           <p class="text-xs font-semibold text-primary mt-auto">Good for: Engagements, parties</p>
         </div>
+
 
         <!-- Contemporary -->
         <div class="group rounded-3xl bg-white border border-accent/60 p-5 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
@@ -230,10 +250,11 @@
           <p class="text-xs font-semibold text-primary mt-auto">Good for: Photoshoots, casual functions</p>
         </div>
 
+
         <!-- Bridal -->
         <div class="group rounded-3xl bg-white border border-accent/60 p-5 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
           <div class="rounded-2xl overflow-hidden mb-4">
-            <img src="https://i.pinimg.com/736x/e4/bb/e6/e4bbe674905c89c604cd1c8d410ec17e.jpg"
+            <img src="/images/mehandhi_1.jpeg"
                  alt="Heavy bridal mehendi"
                  class="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
@@ -244,10 +265,11 @@
           <p class="text-xs font-semibold text-primary mt-auto">Good for: Brides and very close family</p>
         </div>
 
+
         <!-- Floral -->
         <div class="group rounded-3xl bg-white border border-accent/60 p-5 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
           <div class="rounded-2xl overflow-hidden mb-4">
-            <img src="https://i.pinimg.com/736x/db/41/70/db4170b0bf815f21c0f3cf4a7699876e.jpg"
+            <img src="/images/mehandi_2.jpeg"
                  alt="Floral mehendi with mandala"
                  class="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
@@ -258,10 +280,11 @@
           <p class="text-xs font-semibold text-primary mt-auto">Good for: Haldi, mehendi night</p>
         </div>
 
+
         <!-- Western -->
         <div class="group rounded-3xl bg-white border border-accent/60 p-5 flex flex-col shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
           <div class="rounded-2xl overflow-hidden mb-4">
-            <img src="https://i.pinimg.com/736x/7f/4f/02/7f4f023c2e7c6bbd6c21dc53bd7b1296.jpg"
+            <img src="/images/mehandhi_13.jpeg"
                  alt="Bracelet style mehendi"
                  class="w-full h-50 object-cover group-hover:scale-105 transition-transform duration-500">
           </div>
@@ -275,6 +298,7 @@
     </div>
   </section>
 
+
   <!-- Pricing -->
   <section id="pricing" class="py-14 sm:py-18 bg-white">
     <div class="max-w-5xl mx-auto px-4 sm:px-6">
@@ -286,12 +310,13 @@
         </p>
       </div>
 
+
       <div class="fade-up grid md:grid-cols-3 gap-6">
         <!-- Palm -->
         <div class="relative rounded-3xl border border-accent/60 bg-soft p-6 flex flex-col text-center shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
           <p class="text-xs uppercase tracking-[0.22em] text-primary mb-2">Only palm</p>
           <p class="text-3xl font-display mb-1">₹350</p>
-          <p class="text-xs text-gray-600 mb-4">Front side</p>
+          <p class="text-xs text-gray-600 mb-4">Per hand, front side</p>
           <ul class="text-xs sm:text-sm text-gray-700 space-y-2 mb-5">
             <li>Nice round mandala or simple central design.</li>
             <li>Good when you want light mehendi.</li>
@@ -302,6 +327,7 @@
           </a>
         </div>
 
+
         <!-- Palm to Wrist -->
         <div class="relative rounded-3xl border-2 border-primary bg-white p-6 flex flex-col text-center shadow-lg shadow-accent/60 hover:-translate-y-1.5 transition">
           <span class="absolute -top-3 left-1/2 -translate-x-1/2 bg-primary text-white text-[10px] px-3 py-1 rounded-full uppercase tracking-[0.18em]">
@@ -309,7 +335,7 @@
           </span>
           <p class="text-xs uppercase tracking-[0.22em] text-primary mb-2 mt-1">Palm to wrist</p>
           <p class="text-3xl font-display mb-1">₹500</p>
-          <p class="text-xs text-gray-600 mb-4">Front side</p>
+          <p class="text-xs text-gray-600 mb-4">Per hand, front side</p>
           <ul class="text-xs sm:text-sm text-gray-700 space-y-2 mb-5">
             <li>Full palm covered with a neat wrist band.</li>
             <li>Good balance of time and detail.</li>
@@ -320,11 +346,12 @@
           </a>
         </div>
 
+
         <!-- Forearm -->
         <div class="relative rounded-3xl border border-accent/60 bg-soft p-6 flex flex-col text-center shadow-sm hover:shadow-xl hover:-translate-y-1 transition">
           <p class="text-xs uppercase tracking-[0.22em] text-primary mb-2">Up to forearm</p>
           <p class="text-3xl font-display mb-1">₹650</p>
-          <p class="text-xs text-gray-600 mb-4">Front side</p>
+          <p class="text-xs text-gray-600 mb-4">Per hand, front side</p>
           <ul class="text-xs sm:text-sm text-gray-700 space-y-2 mb-5">
             <li>Long bridal style pattern till the forearm.</li>
             <li>More time and more fine details.</li>
@@ -336,11 +363,13 @@
         </div>
       </div>
 
+
       <p class="fade-up text-[11px] sm:text-xs text-gray-500 text-center mt-5">
         Final amount may change a little based on back side designs and extra custom work.
       </p>
     </div>
   </section>
+
 
   <!-- Handmade henna cones -->
   <section id="henna" class="py-14 sm:py-18 bg-soft">
@@ -349,7 +378,7 @@
         <p class="text-xs tracking-[0.2em] uppercase text-primary mb-3">Handmade henna cones</p>
         <h2 class="font-display text-2xl sm:text-3xl mb-3">Fresh cones made at home</h2>
         <p class="text-sm sm:text-base text-gray-700 mb-3">
-          Gulnaz Banu makes her own henna paste using good quality powder, essential oils and safe ingredients so the colour comes out deep and strong.
+          Alisha makes her own henna paste using good quality powder, essential oils and safe ingredients so the colour comes out deep and strong.
         </p>
         <p class="text-sm sm:text-base text-gray-700 mb-4">
           These cones are also sold separately, so if you like doing mehendi on your own or for friends, you can order fresh cones and get them delivered within Tamil Nadu.
@@ -367,29 +396,41 @@
         <p class="mt-2 text-[11px] text-gray-500">Delivery and pickup available only inside Tamil Nadu.</p>
       </div>
 
+
+      <!-- UPDATED: 4-image grid on the right, mobile-safe -->
       <div class="fade-up md:justify-self-end">
         <div class="grid grid-cols-2 gap-4">
+          <!-- Big left image -->
           <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60">
-            <img src="https://i.pinimg.com/736x/51/ac/e3/51ace39557b4db2df38cb55c50226bb9.jpg"
+            <img src="/images/Heena_2.png"
                  alt="Henna cones arranged on a surface"
-                 class="w-full h-60 sm:h-60 object-cover">
+                 class="w-full h-60 sm:h-72 object-cover">
           </div>
+
+          <!-- Right column with 3 stacked images -->
           <div class="space-y-4">
             <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60">
-              <img src="https://i.pinimg.com/736x/82/70/aa/8270aa7c996d31734f02d3c56b1be5dc.jpg"
+              <img src="/images/Heena-1.png"
                    alt="Henna pattern made using cone"
-                   class="w-full h-20 sm:h-28 object-cover">
+                   class="w-full h-20 sm:h-24 object-cover">
             </div>
             <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60">
               <img src="https://th.bing.com/th/id/OIP.WWd0WcrPLew4JReRDaFy1gHaE8?w=250&h=180&c=7&r=0&o=7&dpr=1.3&pid=1.7&rm=3"
                    alt="Close up view of henna paste"
-                   class="w-full h-20 sm:h-28 object-cover">
+                   class="w-full h-20 sm:h-24 object-cover">
+            </div>
+            <!-- New 4th image -->
+            <div class="rounded-3xl overflow-hidden shadow-lg shadow-accent/60">
+              <img src="/images/Heena_3.png"
+                   alt="Henna cones packed and ready"
+                   class="w-full h-20 sm:h-24 object-cover">
             </div>
           </div>
         </div>
       </div>
     </div>
   </section>
+
 
   <!-- Contact -->
   <section id="contact" class="py-14 sm:py-18 bg-gradient-to-br from-soft via-white to-accent/30">
@@ -408,12 +449,13 @@
         </ul>
         <div class="rounded-2xl border border-accent/60 bg-white px-4 py-3 text-sm">
           <p class="font-semibold mb-1">Direct WhatsApp</p>
-          <a href="https://wa.me/99436 03907" target="_blank" class="inline-flex items-center gap-2 text-primary hover:text-secondary">
+          <a href="https://wa.me/9943603907" target="_blank" class="inline-flex items-center gap-2 text-primary hover:text-secondary">
             <span class="inline-flex items-center justify-center w-7 h-7 rounded-full bg-primary text-white text-xs">wa</span>
             <span>+91 99436 93987</span>
           </a>
         </div>
       </div>
+
 
       <!-- Form -->
       <div class="fade-up">
@@ -431,6 +473,7 @@
             </div>
           </div>
 
+
           <div class="grid sm:grid-cols-2 gap-4">
             <div>
               <label class="block text-xs font-semibold mb-1">Area in Ambur</label>
@@ -443,6 +486,7 @@
                      class="w-full border border-accent/60 rounded-xl px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-primary/70">
             </div>
           </div>
+
 
           <div>
             <label class="block text-xs font-semibold mb-1">Preferred style</label>
@@ -457,6 +501,7 @@
               <option>Not sure, please suggest</option>
             </select>
           </div>
+
 
           <div>
             <label class="block text-xs font-semibold mb-1">Coverage</label>
@@ -476,6 +521,7 @@
             </div>
           </div>
 
+
           <div>
             <label class="block text-xs font-semibold mb-1">Any notes for Alisha</label>
             <textarea id="message" rows="3"
@@ -483,10 +529,12 @@
                       placeholder="Share timing, how many people and any design ideas you have."></textarea>
           </div>
 
+
           <button type="submit"
                   class="w-full inline-flex justify-center items-center gap-2 bg-primary text-white text-sm font-semibold px-4 py-2.5 rounded-full hover:bg-secondary transition shadow-md shadow-primary/40">
             Send details on WhatsApp
           </button>
+
 
           <p class="text-[11px] text-gray-500 text-center">
             After you click send, WhatsApp will open with all these details. You can then chat and confirm.
@@ -496,10 +544,11 @@
     </div>
   </section>
 
+
   <!-- Footer -->
   <footer class="border-t border-accent/40 bg-white py-5">
     <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
-      <p>© <span id="year"></span> GA Mehandi. All rights reserved.</p>
+      <p>© <span id="year"></span> Alisha's Mehandi. All rights reserved.</p>
       <div class="flex gap-4">
         <a href="#hero" class="hover:text-primary">Home</a>
         <a href="#about" class="hover:text-primary">About</a>
@@ -509,24 +558,30 @@
     </div>
   </footer>
 
+
   <!-- Scripts -->
   <script>
     // Current year
     document.getElementById('year').textContent = new Date().getFullYear();
 
-    // IntersectionObserver for fade-up animation
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
+    // IntersectionObserver for fade-up animation (desktop / tablet only)
+    if (window.innerWidth >= 768) {
+      const observer = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('show');
+            observer.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.15 });
 
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+      document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
+    } else {
+      // On mobile, show everything immediately
+      document.querySelectorAll('.fade-up').forEach(el => el.classList.add('show'));
+    }
 
-    // WhatsApp form submit (no number of hands now)
+    // WhatsApp form submit
     const form = document.getElementById('whatsappForm');
     form.addEventListener('submit', function (e) {
       e.preventDefault();
@@ -554,8 +609,3 @@
   </script>
 </body>
 </html>
-
-
-
-
-
