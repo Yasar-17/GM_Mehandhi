@@ -37,6 +37,15 @@
       opacity: 1;
       transform: translateY(0);
     }
+
+    /* Disable fade-up on mobile so everything shows immediately */
+    @media (max-width: 767px) {
+      .fade-up {
+        opacity: 1 !important;
+        transform: translateY(0) !important;
+        transition: none !important;
+      }
+    }
   </style>
 </head>
 <body class="bg-soft text-[#1a1a1a] font-body">
@@ -101,97 +110,4 @@
                alt="Arabic trails mehendi"
                class="w-full h-74 object-cover group-hover:scale-105 transition-transform duration-500">
           <div class="p-4">
-            <p class="text-xs uppercase tracking-[0.18em] text-primary mb-1">Arabian Floral</p>
-            <p class="text-sm font-semibold">Structured patterns with soft florals</p>
-            <p class="text-xs text-gray-600 mt-1">Flowing designs perfect for quick yet glam wedding guests.</p>
-          </div>
-        </div>
-
-        <div class="group rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://i.pinimg.com/736x/7b/a7/5e/7ba75e824885e091698d9aaf33d4b39b.jpg"
-               alt="Mandala mehendi close-up"
-               class="w-full h-74 object-cover group-hover:scale-105 transition-transform duration-500">
-          <div class="p-4">
-            <p class="text-xs uppercase tracking-[0.18em] text-primary mb-1">Minimal Bridal</p>
-            <p class="text-sm font-semibold">Clean florals with airy spacing</p>
-            <p class="text-xs text-gray-600 mt-1">Ideal for intimate weddings and understated elegance.</p>
-          </div>
-        </div>
-
-        <div class="group rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://i.pinimg.com/736x/fb/bc/df/fbbcdf5ac94c24a8c7a2bd3234e37e84.jpg"
-               alt="Contemporary grid mehendi"
-               class="w-full h-74 object-cover group-hover:scale-105 transition-transform duration-500">
-          <div class="p-4">
-            <p class="text-xs uppercase tracking-[0.18em] text-primary mb-1">Classic Floral Trail</p>
-            <p class="text-sm font-semibold">Symmetrical blooms with fine detailing</p>
-            <p class="text-xs text-gray-600 mt-1">Timeless designs that never go out of style.</p>
-          </div>
-        </div>
-
-        <div class="group rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://i.pinimg.com/736x/e8/0c/2d/e80c2d65a139538ed051fe6d2aace12a.jpg"
-               alt="Family mehendi group"
-               class="w-full h-74 object-cover group-hover:scale-105 transition-transform duration-500">
-          <div class="p-4">
-            <p class="text-xs uppercase tracking-[0.18em] text-primary mb-1">Full Bloom Bridal</p>
-            <p class="text-sm font-semibold">Bold flowers with deep fills</p>
-            <p class="text-xs text-gray-600 mt-1">Designed for grand occasions and traditional bridal looks.</p>
-          </div>
-        </div>
-
-        <div class="group rounded-3xl overflow-hidden bg-white shadow-sm hover:shadow-xl transition hover:-translate-y-1">
-          <img src="https://i.pinimg.com/736x/1f/c8/64/1fc864a3fae9e1988422b69e08b334c6.jpg"
-               alt="Western bracelet style mehendi"
-               class="w-full h-74 object-cover group-hover:scale-105 transition-transform duration-500">
-          <div class="p-4">
-            <p class="text-xs uppercase tracking-[0.18em] text-primary mb-1">Contemporary Arabic</p>
-            <p class="text-sm font-semibold">Sharp frames with flowing florals</p>
-            <p class="text-xs text-gray-600 mt-1">A stylish choice for modern brides and festive events.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="fade-up mt-10 text-center">
-        <p class="text-sm text-gray-700 mb-3">
-          These are designs curated from Gulnaz Banu's recent work, which were taken inpiration from various styles and trends.<br>
-          Like a particular style here? Share a screenshot with Gulnaz on WhatsApp and she will customise it to match your outfits and comfort.
-        </p>
-        <a href="https://wa.me/919943603907" target="_blank"
-           class="inline-flex items-center gap-2 bg-primary text-white text-sm font-semibold px-5 py-2.5 rounded-full shadow-md shadow-primary/40 hover:bg-secondary transition">
-          Book your design on WhatsApp
-        </a>
-      </div>
-    </div>
-  </section>
-
-  <footer class="border-t border-accent/40 bg-white py-5">
-    <div class="max-w-6xl mx-auto px-4 sm:px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-gray-600">
-      <p>© <span id="year"></span>GA Mehandi. All rights reserved.</p>
-      <div class="flex gap-4">
-        <a href="index.html#hero" class="hover:text-primary">Home</a>
-        <a href="index.html#services" class="hover:text-primary">Services</a>
-        <a href="index.html#pricing" class="hover:text-primary">Pricing</a>
-        <a href="index.html#contact" class="hover:text-primary">Contact</a>
-      </div>
-    </div>
-  </footer>
-
-  <script>
-    document.getElementById('year').textContent = new Date().getFullYear();
-
-    const observer = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('show');
-          observer.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.15 });
-
-    document.querySelectorAll('.fade-up').forEach(el => observer.observe(el));
-  </script>
-</body>
-</html>
-
-
+            <p class="text-xs uppercase
